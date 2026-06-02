@@ -11,10 +11,10 @@
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Metropolitana', 'La Araucanía', 'Valparaíso', 'Ñuble', 'Biobío', 'Maule', 'Coquimbo', 'O Higgins', 'Los Lagos'],
+      labels: ['Metropolitana', 'Valparaíso', 'Biobío', 'La Araucanía', 'Los Ríos', 'Maule', 'Ñuble', 'Coquimbo', 'Antofagasta'],
       datasets: [{
         label: 'Numero de matriculas',
-        data: [3563, 520, 358, 238, 135, 135, 90, 45, 40, 0 ],
+        data: [3563, 520, 358, 238, 135, 135, 90, 45, 40, 35 ],
         borderWidth: 1
       }]
     },
