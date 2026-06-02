@@ -22,3 +22,12 @@
        borderWidth: 2,
   }]
 };
+options: {
+     scales:{
+          y:{
+               beginatZero:true
+          }
+     }
+}
+}};
+
