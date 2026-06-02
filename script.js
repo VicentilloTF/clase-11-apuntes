@@ -1,6 +1,6 @@
 
      
-     new chart(document. getElementByID ("GraficoPie") 
+     new Chart(document. getElementByID ("GraficoPie") 
           const data = {
   labels: ["Región Metropolitana","Valparaíso",'Biobío', 'La Araucanía','Los Ríos','Maule', 'Antofagasta',  'Ñuble', 'Coquimbo', 'Arica y Parinacota'],
   datasets: [{
