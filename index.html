@@ -96,26 +96,9 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
         <script>
-            new Chart(document.getElementById("doughnut"), {
-                type: "doughnuts",
-                data: {
-                    datasets: [
-                        {
-                            label: "doughnut Dataset",
-                            data: 
-const data = {
-  labels: [
-    'Región Metropolitana',
-    'Valparaíso',
-    'Biobío',
-    'La Araucanía',
-    'Los Ríos',
-    'Maule',
-    'Antofagasta',
-    'Ñuble',
-    'Coquimbo',
-    'Arica y Parinacota'
-  ],
+           new Chart(document. getElementByID ("GraficoPie") 
+          const data = {
+  labels: ["Región Metropolitana","Valparaíso",'Biobío', 'La Araucanía','Los Ríos','Maule', 'Antofagasta',  'Ñuble', 'Coquimbo', 'Arica y Parinacota'],
   datasets: [{
     label: 'Matrículas anuales',
     data: [3563, 520, 358, 238, 135, 135, 90, 45, 40, 0],
@@ -130,6 +113,11 @@ const data = {
       'rgb(24, 95, 165)',
       'rgb(24, 95, 165)',
       'rgb(24, 95, 165)'
+    ],
+       borderColor: [#fefefe", "#fefefe"]
+       borderWidth: 2,
+  }]
+};
     ],
     hoverOffset: 4
   }]
