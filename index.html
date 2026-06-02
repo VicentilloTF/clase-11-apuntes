@@ -97,36 +97,32 @@
 
         <script>
           
-     
-     new Chart(document. getElementByID ("GraficoPie") 
-          const data = {
-  labels: ["Región Metropolitana","Valparaíso",'Biobío', 'La Araucanía','Los Ríos','Maule', 'Antofagasta',  'Ñuble', 'Coquimbo', 'Arica y Parinacota'],
-  datasets: [{
-    label: 'Matrículas anuales',
-    data: [3563, 520, 358, 238, 135, 135, 90, 45, 40, 0],
-    backgroundColor: [
-      'rgb(29, 158, 117)',  
-      'rgb(24, 95, 165)',
-      'rgb(24, 95, 165)',
-      'rgb(24, 95, 165)',
-      'rgb(24, 95, 165)',
-      'rgb(24, 95, 165)',
-      'rgb(24, 95, 165)',
-      'rgb(24, 95, 165)',
-      'rgb(24, 95, 165)',
-      'rgb(24, 95, 165)'
-    ],
-       borderColor: ["#fefefe", "#fefefe"]
-       borderWidth: 2,
-  }]
-};
-options: {
-     scales:{
-          y:{
-               beginatZero:true
-          }
-     }
-}
-}};
+   
+<div>
+  <canvas id="dispersion"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('dispersion');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Metropolitana', 'La Araucanía', 'Valparaíso', 'Ñuble', 'Biobío', 'Maule', 'Coquimbo', 'O Higgins', 'Los Lagos', 'Los Ríos', 'Tarapacá', 'Antofagasta', 'Arica y Parinacota', 'Aysén', 'Magallanes', 'Atacama'],
+      datasets: [{
+        label: '# of Votes',
+        data: [3563, 520, 358, 238, 135, 135, 90, 45, 40, 0 ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
 </script>
-			
