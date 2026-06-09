@@ -1,4 +1,4 @@
- new Chart(document.getElementById("dispersion1"), {
+new Chart(document.getElementById("dispersion1"), {
                 type: "scatter",
                 data: {
                     datasets: [
@@ -128,26 +128,25 @@
             });
 
 
-  const ctx = document.getElementById('dispersion2');
+const ctx = document.getElementById('dispersion2');
 
-  new Chart(ctx, {
+new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Metropolitana', 'Valparaíso', 'Biobío', 'La Araucanía', 'Los Ríos', 'Maule', 'Ñuble', 'Coquimbo', 'Antofagasta'],
-      datasets: [{
+    labels: ['Metropolitana', 'Valparaíso', 'Biobío', 'La Araucanía', 'Los Ríos', 'Maule', 'Ñuble', 'Coquimbo', 'Antofagasta'],
+    datasets: [{
         label: 'Numero de matriculas',
         data: [3563, 520, 358, 238, 135, 135, 90, 45, 40, 35 ],
         borderWidth: 1
-      }]
+    }]
     },
     options: 
     {
-      scales:
-      {
+    scales: 
+    {
         y: {
-          beginAtZero: true
+        beginAtZero: true
         }
-      }
     }
-  });
-
+    }
+});
