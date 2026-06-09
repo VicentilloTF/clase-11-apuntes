@@ -1,4 +1,4 @@
- new Chart(document.getElementById("dispersion"), {
+ new Chart(document.getElementById("dispersion1"), {
                 type: "scatter",
                 data: {
                     datasets: [
@@ -126,14 +126,9 @@
                     },
                 },
             });
-<div>
-  <canvas id="dispersion"></canvas>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<script>
-  const ctx = document.getElementById('dispersion');
+  const ctx = document.getElementById('dispersion2');
 
   new Chart(ctx, {
     type: 'bar',
@@ -145,12 +140,14 @@
         borderWidth: 1
       }]
     },
-    options: {
-      scales: {
+    options: 
+    {
+      scales:
+      {
         y: {
           beginAtZero: true
         }
       }
     }
   });
-</script>
+
